@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Montserrat'; 
+    src: url('Montserrat-VariableFont_wght.ttf') format('truetype'); /* Ruta relativa o absoluta de tu archivo .ttf */
+}
+
+
+:root{
+    --primary-color:blue;
+    --second-color :#503b9dd3;
+    --three-color:#fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#simulator{
+    width: 100%;
+    max-width: 1300px;
+    padding: 50px 60px;
+    border: 1px solid var(--primary-color);
+    margin: 100px auto;
+    box-shadow: 0 0 6em var(--primary-color);
+    background: var(--second-color);
+}
+
+h1{
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--three-color);
+    text-align: center;
+    padding-bottom: 50px;
+    border-bottom: 2px solid var(--three-color);
+}
+
+.cont-flex{
+    width: 100%;
+    display: flex;
+}
+
+.left,
+.right{
+    width: 50%;
+    padding: 40px 20px;
+}
+
+h2{
+    color: var(--three-color);
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 14px;
+}
+
+.left p{
+    margin-bottom: 30px;
+    color: var(--three-color);
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.group-data.two-columns{
+    width: 50%;
+    box-sizing: border-box;
+}
+.group-data.one-column{
+    width: 100%;
+}
+
+.group-data.three-columns{
+    width: 60%;
+}
+
+.group-data.four-columns{
+    width: 40%;
+}
+
+.group-data{
+    padding-right: 16px;
+}
+.group-data label{ 
+    display: block;
+    margin-bottom: 10px;
+    color: var(--three-color);
+}
+.group-data input,
+.group-data select{
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+    color: var(--three-color);
+} 
+
+
+
+
+.form button{
+    display: block;
+    width: 97%;
+    padding: 14px 80px;
+    background: #035173b9;
+    color: #fff;
+    border: 1px solid #000;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.form button:hover{
+    background: #252627;
+    border: 1px solid #1c9882;
+    color: #fff;
+}
+
+input, select{
+    padding: 14px 30px;
+    background: var(--second-color);
+    border: 0;
+    border-bottom: 3px solid #151516;
+    outline: none;
+}
+input::placeholder {
+    color: var(--three-color); /* Cambia este valor al color que desees */
+}
+
+.right .pre-simulation{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img{
+    max-width: 80%;
+}
+
+.right .post-simulation {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    padding: 0 60px;
+}
+
+.post-simulation.disabled,
+.pre-simulation.disabled {
+    display: none;
+}
+
+.right .post-simulation h3{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.right .post-simulation h3 span{
+    color: var(--three-color);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.right .total{
+    background: #c3c9ec;
+    padding: 30px;
+}
+
+.right .total h4{
+    font-size: 28px;
+}
+
+.right .total h2{
+    font-size: 36px;
+    padding: 14px 0;
+    color: #000;
+}
+
+.total p{
+    font-weight: 400;
+}
+
+.total p span{
+    font-weight: 600;
+}
+
+.notificacion{
+    padding: 20px;
+    border: 1px solid #000;
+    margin-top: 40px;
+}
+
+.notificacion h5{
+    font-weight: 400;
+    color: #fff;
+}
+
+.notificacion h5 span{
+    font-weight: 700;
+}
+
+footer{
+    padding: 30px;
+   
+    text-align: center;
+    color: #000;
+}
